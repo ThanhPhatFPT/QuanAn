@@ -26,18 +26,30 @@ public class LoginUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        txtHinh = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtTaikhoan = new javax.swing.JTextField();
+        txtMatkhau = new javax.swing.JTextField();
+        btnDangnhap = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtHinh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/edusys/icon/logologin.png"))); // NOI18N
+        getContentPane().add(txtHinh, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 0, 275, 242));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel2.setText("Đăng Nhập");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(133, 254, -1, -1));
+        getContentPane().add(txtTaikhoan, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 334, 247, -1));
+        getContentPane().add(txtMatkhau, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 374, 247, -1));
+
+        btnDangnhap.setBackground(new java.awt.Color(0, 204, 255));
+        btnDangnhap.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnDangnhap.setForeground(new java.awt.Color(255, 255, 255));
+        btnDangnhap.setText("Đăng Nhập");
+        getContentPane().add(btnDangnhap, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 429, 310, 39));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +91,10 @@ public class LoginUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnDangnhap;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel txtHinh;
+    private javax.swing.JTextField txtMatkhau;
+    private javax.swing.JTextField txtTaikhoan;
     // End of variables declaration//GEN-END:variables
 }
